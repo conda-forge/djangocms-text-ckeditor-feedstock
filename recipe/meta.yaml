@@ -1,13 +1,13 @@
 {% set name = "djangocms-text-ckeditor" %}
-{% set version = "5.1.5" %}
+{% set version = "5.1.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/djangocms-text-ckeditor-{{ version }}.tar.gz
-  sha256: eca45b3393879c61bb69d3c23df14a5fd4bef1f2ad66dc36a5bf7bfe06c6b7c3
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a30d92e052643b4dfb4149007f71617959763b805a2f0d4f492095441865457d
 
 build:
   noarch: python
